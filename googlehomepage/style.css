@@ -31,22 +31,15 @@ header{
 }
 
 
-
 #right-head a{
     margin-right: 1.5em;
 }
 
 svg{
     height: 2em;
-    width: 3em;
-    border-radius: 60px;
-    display: block;
-    margin: auto;
+    width: 2em;
 }
 
-svg:hover{
-    background-color: #cfcfcf;
-}
 
 .right-link{
     margin-top: 1em;
