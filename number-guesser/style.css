@@ -1,0 +1,50 @@
+#container1{
+    border: 1.5em outset lightpink;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top left, red, white);
+    margin: 0 auto;
+    padding-bottom: 5em;
+}
+#container2{
+    display: flex;
+}
+h1{
+    font-family: fantasy;
+    font-size: 5em;
+    color: rgb(122, 122, 122);
+    -webkit-text-stroke: 1px #222;
+}
+label{
+    margin: auto 0;
+    font-size: 3em;
+    font-family: fantasy;
+    color: rgb(81, 45, 112);
+}
+input{
+    height: 1.5em;
+    margin: auto 1em;
+}
+button{
+    font-family: cursive;
+    text-align: center;
+    color: whitesmoke;
+    height: 2.5em;
+    margin: auto 0;
+    background-color: rgb(81, 45, 112);
+    border: 1px whitesmoke solid;
+}
+button:hover{
+    background-color: whitesmoke;
+    border: 1px black solid;
+    color: #222;
+    cursor: pointer;
+}
+p{
+    font-size: 2em;
+    color: rgb(122, 122, 122);
+    -webkit-text-stroke: 1px #222;
+}
