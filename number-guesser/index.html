@@ -1,0 +1,111 @@
+<!-- Written by Chris Kade on 7-22-21. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guesser - Chris Kade</title>
+    <style>
+        #container1{
+            border: 1.5em outset lightpink;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(to top left, red, white);
+            margin: 0 auto;
+            padding-bottom: 5em;
+        }
+        #container2{
+            display: flex;
+        }
+        h1{
+            font-family: fantasy;
+            font-size: 5em;
+            color: rgb(122, 122, 122);
+            -webkit-text-stroke: 1px #222;
+        }
+        label{
+            margin: auto 0;
+            font-size: 3em;
+            font-family: fantasy;
+            color: rgb(81, 45, 112);
+        }
+        input{
+            height: 1.5em;
+            margin: auto 1em;
+        }
+        button{
+            font-family: cursive;
+            text-align: center;
+            color: whitesmoke;
+            height: 2.5em;
+            margin: auto 0;
+            background-color: rgb(81, 45, 112);
+            border: 1px whitesmoke solid;
+        }
+        button:hover{
+            background-color: whitesmoke;
+            border: 1px black solid;
+            color: #222;
+            cursor: pointer;
+        }
+        p{
+            font-size: 2em;
+            color: rgb(122, 122, 122);
+            -webkit-text-stroke: 1px #222;
+        }
+        #message{
+            display: none;
+        }
+
+    </style>
+    <script>
+        let count = 0;
+        // Generate a random number between 1 and 10
+        function generateNumber() {
+            return Math.floor(Math.random() * 10 + 1);
+        }
+        document.addEventListener('DOMContentLoaded', addListen, false);
+        function addListen(){
+            let num = generateNumber();
+            const button = document.getElementById('btn').addEventListener('click', function() {guessNumber(num);});
+        }
+
+        
+        // Button that guesses the number
+        function guessNumber(num) {
+            count++;
+            let input = document.getElementById('input').value;
+            let int = parseInt(input);
+            console.log(int);
+            if (num === int) {
+                let p = document.getElementById('message');
+                p.style.display = 'block';
+                p.innerText = 'You correctly guessed the number in ' + count + ' tries!';
+                console.log(int);
+                
+            }
+            else {
+                let p = document.getElementById('message');
+                p.innerHTML = 'Sorry! Try again!';
+                p.style.display = 'block';
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <div id="container1">
+        <h1>Number Guesser - Chris Kade</h1>
+        <div id="container2">
+            <label for='input'>Enter a number between 1 and 10:</label>
+            <input type="number" id='input'>
+            <button id="btn">Guess Number</button>
+        </div>
+        <p id="message"></p>
+    </div>
+</body>
+</html>

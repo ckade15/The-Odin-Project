@@ -13,10 +13,12 @@ h1{
 }
 main{
     border: 5px outset #f19;
-    width: 50%;
+    width: 70%;
     margin: 2em auto;
     display: grid;
     grid-template-columns: 50% 50%;
+    background-image: linear-gradient(lightblue, white);
+    padding: 5px;
 }
 
 h3{
