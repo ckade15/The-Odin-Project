@@ -1,0 +1,25 @@
+h1{
+    text-align: center;
+    width: 50%;
+    margin: 1em auto;
+}
+
+main{
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+label{
+    margin-left: 15em;
+    margin-right: 1em;
+}
+
+button{
+    margin-left: 1em;
+}
+
+p{
+    margin-top: 2em;
+    text-align: center;
+}
