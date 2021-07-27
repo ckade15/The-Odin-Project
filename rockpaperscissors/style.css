@@ -22,5 +22,10 @@ div{
 button{
     margin-top: 2em;
     margin-left: 51em;
-    width: 4em;
+    width: 6em;
+    padding: 10px;
+}
+
+p{
+    font-size: 2em;
 }
