@@ -1,0 +1,26 @@
+h1{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    font: 4em;
+}
+
+div{
+    width: 80%;
+    margin: 1em auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.style{
+    border: 3px outset red;
+    opacity: 50%;
+}
+
+button{
+    margin-top: 2em;
+    margin-left: 51em;
+    width: 4em;
+}
