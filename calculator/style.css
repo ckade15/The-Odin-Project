@@ -47,11 +47,13 @@ section{
     font-size: 2em;
     padding: 8px;
     width: 3em;
+    border: 2px solid teal;
 }
 
 .btn:hover{
     background-color: beige;
     color: teal;
+    border: 2px solid teal;
 }
 
 #clear-container{
@@ -60,7 +62,7 @@ section{
 }
 
 .clear{
-    height: 2em;
+    height: 1.8em;
     border-radius: 45px;
     width: 1.9em;
     text-align: center;
