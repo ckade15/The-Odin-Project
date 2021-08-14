@@ -1,0 +1,70 @@
+body{
+    background-color: blue;
+    padding-bottom: 4em;
+}
+
+h1{
+    text-align: center;
+    font-size: 4em;
+    color: aqua;
+}
+
+span{
+    font-size: .5em;
+    color: aquamarine;
+}
+
+main{
+    width: 50%;
+    padding: 1em;
+    margin: 0 auto;
+    background-color: rgb(0, 248, 248);
+}
+
+#feed-container{
+    width: 90%;
+    height: 8em;
+    background-color: beige;
+    margin: 1em auto;
+}
+
+section{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-row-gap: 2em;
+    place-items: center;
+    text-align: center;
+    padding: 1em;
+}
+
+.btn{
+    background-color: teal;
+    height: 1em;
+    color: white;
+    font-size: 2em;
+    padding: 8px;
+    width: 3em;
+}
+
+.btn:hover{
+    background-color: beige;
+    color: teal;
+}
+
+#clear-container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.clear{
+    height: 2em;
+    border-radius: 45px;
+    width: 1.9em;
+    text-align: center;
+    margin-right: 2.7em;
+    margin-bottom: .5em;
+    
+}
